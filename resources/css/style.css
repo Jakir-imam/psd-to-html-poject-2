@@ -1,5 +1,113 @@
 /* basic setup */
-
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
+	box-sizing: border-box;
 	font-family: 'Titillium Web', sans-serif;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+/*heading*/
+h1 {
+	font-size: 42px;
+	color: #fff;
+	
+}
+
+/* reusable components */
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/*button*/
+.btn:link,
+.btn:visited,
+.btn {
+	background: #333;
+	border-bottom: 3px solid #000;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 45px;
+
+
+}
+
+/*header section*/
+header {
+	background:linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 85vh;
+	position: relative;
+}
+
+.logo {
+	height: 35px;
+	width: auto;
+	margin-top: 35px;
+	float: left;
+}
+
+/*main navigation*/
+.main-nav {
+	float: right;
+	margin-top: 40px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 10px;	
+}
+
+.main-nav li:first-child {
+	margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: rgba(100, 58, 121, 0);
+	padding: 6px 16px;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 16px;
+	transition: .3s;
+
+
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+	background: rgba(100, 58, 121, 1);
+
+}
+.active {
+	background: rgba(100, 58, 121, 1);
+	border-radius: 3px;
+}
+
+.hero-text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+	background: #eb7d4b;
+	border-color: #c86a40;
 }
