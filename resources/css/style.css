@@ -6,6 +6,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -33,14 +34,6 @@ h2::after {
 	width: 8.5rem;
 	margin: auto;
 	margin-top: 2rem;
-}
-
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
-	visibility: hidden;
 }
 
 /* reusable components */
@@ -199,7 +192,7 @@ header {
 	text-align: center;
 	background-position: center center;
 	background-attachment: fixed;
-	
+
 }
 
 .team-section h2 {
@@ -223,6 +216,8 @@ header {
 	font-size: 1.6rem;
 	text-transform: capitalize;
 	margin-top: .5rem;
+	display: inline-block;
+
 }
 
 .social-link {
@@ -252,4 +247,29 @@ header {
 .social-link ul li a:hover i::before {
 	background: #bdd1df;
 	transform: rotate(360deg);
+}
+
+/*skill section*/
+.skill-section {
+	color: #3c4761;
+	background: linear-gradient(rgba(255, 255,	255, 0.9),rgba(0, 0, 0, 0.9)), url(img/skill-bg.jpg);
+	text-align: center;
+
+}
+
+.skill-section h2 {
+	color: #3c4761;
+}
+
+svg.radial-progress circle {
+	stroke-width: 4;
+}
+
+svg.radial-progress text {
+	fill: #393939;
+	font-size: 1rem;
+}
+
+svg.radial-progress circle {
+	stroke: #30bae7;
 }

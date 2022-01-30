@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="vendors/css/normalize.css">
 	<link rel="stylesheet" href="vendors/css/grid.css">
+	<link rel="stylesheet" href="vendors/css/animated-cicle.css">
 	<link rel="stylesheet" href="resources/css/style.css">
 	<link rel="stylesheet" href="resources/css/responsive.css">
 </head>
@@ -24,8 +25,8 @@
 				<ul class="main-nav">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#service">Service</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Skill</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#skill">Skill</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
@@ -43,7 +44,7 @@
 
 
 	<!-- services section start -->
-	<section class="services-section clearfix" id="service">
+	<section class="services-section" id="service">
 		<div class="row">
 			<h2>SERVICES WE PROVIDE</h2>
 			<p class="little-description">
@@ -85,7 +86,7 @@
 	<!-- services section end -->
 
 	<!-- team section start -->
-	<section class="team-section clearfix">
+	<section class="team-section" id="team">
 		<div class="row">
 			<h2>MEET OUR BEAUTIFUL TEAM</h2>
 			<p class="little-description">We are a small team of designers and developers, who help brands with big ideas.
@@ -169,9 +170,65 @@
 
 	<!-- team section end -->
 
+	<!-- skill section start -->
+
+	<section class="skill-section" id="skill">
+		<div class="row">
+			<h2>WE GOT SKILLS</h2>
+			<p class="little-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="row">
+			<div class="col span_1_of_4">
+				<svg class="radial-progress" data-percentage="80" viewBox="0 0 80 80">
+  						<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+  						<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+  						<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+				</svg>
+				<h3>Web Design</h3>
+			</div>
+
+			<div class="col span_1_of_4">
+				<svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+  						<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+  						<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+  						<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+				</svg>
+				<h3>HTML / CSS</h3>
+			</div>
+
+			<div class="col span_1_of_4">
+				<svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+  						<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+  						<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+  						<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+				</svg>
+				<h3>Graphic Design</h3>
+			</div>
+
+			<div class="col span_1_of_4">
+				<svg class="box radial-progress" data-percentage="90" viewBox="0 0 80 80">
+  						<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+  						<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+  						<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+				</svg>
+				<h3>UI / UX</h3>
+			</div>
+		</div>
+
+
+	</section>
+
+
+	<!-- skill section end -->
+
+
 
 <!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="vendors/js/html5shiv.min.js"></script>
 	<script src="vendors/js/respond.min.js"></script>
+	<script src="resources/js/main.js"></script>
+	<script src="vendors/js/animated-cicle.js"></script>
 </body>
 </html>
